@@ -10,7 +10,6 @@ import { setUserWithCreds } from '../../actions';
 import {showErrors} from "./userUtils"
 
 function CreateForm({ status, errors, touched, isSubmitting }) {
-
   return (
     <div className="signup-container">
       <Form className="main-form">

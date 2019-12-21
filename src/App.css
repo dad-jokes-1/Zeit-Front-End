@@ -7,4 +7,24 @@
     border: none;
 }
 
+.button1 {
+  color: white;
+  width: 200px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all .8s ease-in-out;
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.button1:hover {
+    color: white;
+    background-position: 100% 0;
+    transition: all .8s ease-in-out;
+}
+
+
 
