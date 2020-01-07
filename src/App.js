@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PrivateRoute from './utils/PrivateRoute';
 import { loginUser, setJokes } from './actions';
+import JokeList from './components/JokeList'
 import "./App.css";
 
 //import components
@@ -19,6 +20,7 @@ function App() {
       <CreateLoginHeader />
       <Switch>
         <Route exact path="/" render={props => <LandingPage {...props} />} />
+        <Route path="/home" component={JokeList} />
       </Switch>
       <Footer />
     </div>
