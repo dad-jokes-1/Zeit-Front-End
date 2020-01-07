@@ -37,6 +37,7 @@ function CreateLoginHeader(props) {
           </span>
       </div>
       <div className="help-button"><span>?</span></div>
+      <div className="help-button"><span>Header</span></div>
     </header>
   );
 }
