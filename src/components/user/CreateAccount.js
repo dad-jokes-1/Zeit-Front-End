@@ -1,7 +1,7 @@
 import React from "react";
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
-import axios from "axios"
+import axios from "axios";
 import {Link} from "react-router-dom"
 import moment from "moment"
 import PulseLoader from 'react-spinners/PulseLoader';
@@ -122,7 +122,7 @@ handleSubmit(values, { resetForm, setSubmitting, setStatus, props }) {
 
   //Need to check for username or email already in use on existing users on server
     axios
-        .post("backend endpoint here", newUser)
+        .post("https://dadjokesbw.herokuapp.com/api/jokes", newUser)
         .then(response => {
           resetForm();
           setSubmitting(false);
