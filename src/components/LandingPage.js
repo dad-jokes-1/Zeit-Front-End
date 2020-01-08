@@ -1,10 +1,12 @@
 import React from "react";
+import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 import leftArrow from "../assets/left.svg";
 import rightArrow from "../assets/right.svg";
 import "../App.css";
 
 
-const LandingPage = () => {
+const LandingPage = props => {
   return (
     <div className="wrapper">
       <div className="landing-page content">
@@ -24,6 +26,34 @@ const LandingPage = () => {
           <p className="landing-page tagline">
             Dad jokes app
           </p>
+          <span>
+            <Button
+              className="button1"
+              onClick={e => {
+                e.preventDefault();
+                props.history.push("/signup");
+              }}
+            >
+              Create an Account
+            </Button>
+          </span>
+          <span>
+            <Button
+              className="button1"
+              onClick={e => {
+                e.preventDefault();
+                props.history.push("/home");
+              }}
+            >
+              Continue As Guest
+            </Button>
+          </span>
+          <span className="loginlabel">
+            Already have an account?{" "}
+            <Link className="loginlink" to="/login">
+              Login
+            </Link>
+          </span>
         </div>
       </div>
     </div>
