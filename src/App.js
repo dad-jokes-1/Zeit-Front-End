@@ -13,6 +13,8 @@ import FormikLoginForm from './components/user/Login'
 import Footer from "./components/Footer"
 import LandingPage from './components/LandingPage';
 import CreateLoginHeader from "./components/CreateLoginHeader";
+import CreateAccount from './components/user/CreateAccount';
+import Login from './components/user/Login';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Switch>
         <Route exact path="/" render={props => <LandingPage {...props} />} />
         <Route path="/home" component={JokeList} />
+        <Route path="/" component={CreateAccount}/>
+        <Route path="/login" component={Login} />
       </Switch>
       <Footer />
     </div>

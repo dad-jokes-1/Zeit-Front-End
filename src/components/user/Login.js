@@ -89,7 +89,7 @@ handleSubmit(values, { resetForm, setSubmitting, setStatus, props }) {
 
     //Need to confirm login credentials with a user on server
     axios
-        .post("https://dadjokesbw.herokuapp.com/api/jokes", values)
+        .post("https://dadjokesbw.herokuapp.com/api/users", values)
         .then(res => {
           resetForm();
           setSubmitting(false);
